@@ -174,4 +174,10 @@ const angryProffesor = (k,students) => {
         counter += (student > 0)? 0 : 1;
     })
     return (k > counter)? `YES` : `NO`;
-}	    
+}
+
+
+// const angryProffesor = (k,students) => {
+//     students.sort();
+//     return (students[k-1] > 0)? `YES` : `NO`;
+// }	    
