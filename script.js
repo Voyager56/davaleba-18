@@ -131,11 +131,11 @@ slides.forEach(slide => {
 
 //3
 const buttonDiv = document.querySelector(`.buttons`)
-for(let i =0; i<4;i++){
+for(let i =0; i<buttonDiv.length;i++){
     const dot = document.createElement(`div`)
     dot.className = `${i}`;
     buttonDiv.appendChild(dot)
- }
+}
 
 const dotArray = Array.from(buttonDiv.childNodes);
 dotArray.shift();
@@ -171,7 +171,7 @@ const students = [-1, -3, 4, 2];
 const angryProffesor = (k,students) => {
     let counter = 0;
     students.forEach(student => { 
-        counter += (student > 0)? 1 : 0;
+        counter += (student > 0)? 0 : 1;
     })
-    return (k >  counter)? `YES` : `NO`;
+    return (k > counter)? `YES` : `NO`;
 }	    
