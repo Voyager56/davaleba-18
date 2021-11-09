@@ -131,7 +131,7 @@ slides.forEach(slide => {
 
 //3
 const buttonDiv = document.querySelector(`.buttons`)
-for(let i =0; i<buttonDiv.length;i++){
+for(let i =0; i<slides.length;i++){
     const dot = document.createElement(`div`)
     dot.className = `${i}`;
     buttonDiv.appendChild(dot)
